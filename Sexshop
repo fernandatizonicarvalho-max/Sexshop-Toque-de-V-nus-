@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toque de Vênus - Sexshop</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #1c1c1c;
+    color: #fff;
+  }
+  header {
+    background: linear-gradient(90deg, #ff2e63, #ff6f91);
+    padding: 20px;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px #000;
+  }
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  .filters button {
+    background: #ff2e63;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .filters button:hover, .filters button.active {
+    background: #ff6f91;
+    transform: scale(1.05);
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+  }
+  .card {
+    background: #2a2a2a;
+    border-radius: 15px;
+    padding: 15px;
+    width: 260px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff6f91;
+  }
+  .card img {
+    max-width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s;
+  }
+  .card img:hover {
+    transform: scale(1.1);
+  }
+  .card h3 {
+    margin: 12px 0 8px 0;
+    font-size: 1.1em;
+  }
+  .price {
+    color: #ff6f91;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 12px;
+  }
+  .buy-btn {
+    background: #ff2e63;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .buy-btn:hover {
+    background: #ff6f91;
+    transform: scale(1.05);
+  }
+  footer {
+    background: #111;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #aaa;
+  }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+
+<header>✨ Toque de Vênus ✨</header>
+
+<div class="filters">
+  <button class="active" onclick="filterProducts('all')">Todos</button>
+  <button onclick="filterProducts('brinquedos')">Brinquedos</button>
+  <button onclick="filterProducts('acessorios')">Acessórios Sensuais</button>
+  <button onclick="filterProducts('géis')">Géis e Lubrificantes</button>
+  <button onclick="filterProducts('jogos')">Jogos e Diversão</button>
+</div>
+
+<div class="container">
+
+  <!-- Brinquedos -->
+  <div class="card brinquedos">
+    <img src="https://via.placeholder.com/260x220?text=Plug+Anal+Rabo+de+Coelho" alt="Kit Plug Anal Rabo de Coelho">
+    <h3>Kit Plug Anal Rabo de Coelho</h3>
+    <p class="price">R$ 40,10</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+  <div class="card brinquedos">
+    <img src="https://via.placeholder.com/260x220?text=Vibrador+Personal" alt="Vibrador Personal com Capa com Texturas">
+    <h3>Vibrador Personal com Capa com Texturas</h3>
+    <p class="price">R$ 13,03</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+  <div class="card brinquedos">
+    <img src="https://via.placeholder.com/260x220?text=Protese+Dupla" alt="Prótese Dupla Realística com Ventosa 18x3,5cm">
+    <h3>Prótese Dupla Realística com Ventosa 18x3,5 cm</h3>
+    <p class="price">R$ 20,30</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+  <!-- Acessórios Sensuais -->
+  <div class="card acessorios">
+    <img src="https://via.placeholder.com/260x220?text=Tiara+de+Orelhas" alt="Tiara de Orelhas">
+    <h3>Tiara de Orelhas</h3>
+    <p class="price">R$ 40,10</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+  <div class="card acessorios">
+    <img src="https://via.placeholder.com/260x220?text=Grampos+para+Mamilos" alt="Grampos para Mamilos">
+    <h3>Grampos para Mamilos</h3>
+    <p class="price">R$ 40,10</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+  <div class="card acessorios">
+    <img src="https://via.placeholder.com/260x220?text=Gargantilha+Sexy" alt="Gargantilha Sexy Import">
+    <h3>Gargantilha Sexy Import</h3>
+    <p class="price">R$ 40,10</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+  <!-- Géis e Lubrificantes -->
+  <div class="card géis">
+    <img src="https://via.placeholder.com/260x220?text=Spray+Ice" alt="Garganta Muito Mais Profunda Ice Spray">
+    <h3>Garganta Muito Mais Profunda Ice Spray 15ml</h3>
+    <p class="price">R$ 12,43</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+  <div class="card géis">
+    <img src="https://via.placeholder.com/260x220?text=Kuloko+Gel" alt="Kuloko Gel Dessensibilizante Anal">
+    <h3>Kuloko Gel Dessensibilizante Anal 15g</h3>
+    <p class="price">R$ 6,84</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+  <div class="card géis">
+    <img src="https://via.placeholder.com/260x220?text=Lacradinha+Gel" alt="Lacradinha Gel Adstringente Feminino">
+    <h3>Lacradinha Gel Adstringente Feminino 15g</h3>
+    <p class="price">R$ 7,99</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+  <div class="card géis">
+    <img src="https://via.placeholder.com/260x220?text=Pinto+Loko" alt="Pinto Loko Gel Estimulante Masculino">
+    <h3>Pinto Loko Gel Estimulante Masculino 15g</h3>
+    <p class="price">R$ 5,99</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+  <div class="card géis">
+    <img src="https://via.placeholder.com/260x220?text=Tesao+de+Vaca" alt="Tesão de Vaca Afrodisíaco Natural">
+    <h3>Tesão de Vaca Afrodisíaco Natural 10ml</h3>
+    <p class="price">R$ 2,29</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+  <div class="card géis">
+    <img src="https://via.placeholder.com/260x220?text=LIS-In+Gel" alt="LIS-In Gel Dessensibilizante Anal">
+    <h3>LIS-In Gel Dessensibilizante Anal 30g</h3>
+    <p class="price">R$ 21,59</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+  <div class="card géis">
+    <img src="https://via.placeholder.com/260x220?text=Oleo+Corporal" alt="Óleo Corporal e Massagem 120ml">
+    <h3>Óleo Corporal e Massagem 120ml</h3>
+    <p class="price">R$ 25,28</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+  <div class="card géis">
+    <img src="https://via.placeholder.com/260x220?text=Goze+Mais" alt="Goze + Gel Acelerador do Prazer">
+    <h3>Goze + Gel Acelerador do Prazer 15g</h3>
+    <p class="price">R$ 7,99</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+  <div class="card géis">
+    <img src="https://via.placeholder.com/260x220?text=Love+Lub" alt="Love Lub Bubbalove Lubrificante Beijável">
+    <h3>Love Lub Bubbalove Lubrificante Beijável 60g</h3>
+    <p class="price">R$ 4,89</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+  <!-- Jogos e Diversão -->
+  <div class="card jogos">
+    <img src="https://via.placeholder.com/260x220?text=Desejos+e+Drinks" alt="Desejos e Drinks Jogo de Cartas">
+    <h3>Desejos e Drinks Jogo de Cartas</h3>
+    <p class="price">R$ 16,65</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+  <div class="card jogos">
+    <img src="https://via.placeholder.com/260x220?text=Pepper+Ball" alt="Pepper Ball Plus Siri Ryka">
+    <h3>Pepper Ball Plus Siri Ryka (2 unid.)</h3>
+    <p class="price">R$ 3,00</p>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 Toque de Vênus - Todos os direitos reservados
+</footer>
+
+<script>
+function filterProducts(category) {
+  const cards = document.querySelectorAll('.card');
+  const buttons = document.querySelectorAll('.filters button');
+  
+  buttons.forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+  
+  cards.forEach(card => {
+    if (category === 'all') {
+      card.classList.remove('hidden');
+    } else {
+      if (card.classList.contains(category)) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    }
+  });
+}
+</script>
+
+</body>
+</html>
